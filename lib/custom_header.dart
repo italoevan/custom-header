@@ -11,9 +11,7 @@ class CustomHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(height ?? 90),
-        child: Container(
+     body: Container(
           height: height ?? 90,
           child: Padding(
             padding: EdgeInsets.all(10),
@@ -24,7 +22,6 @@ class CustomHeader extends StatelessWidget {
             ),
           ),
         ),
-      ),
     );
   }
 }
