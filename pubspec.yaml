@@ -1,7 +1,7 @@
 name: custom_header
 description: A package that allow you use header in flutter web app.
 version: 0.0.1
-homepage:
+homepage: https://github.com/italoevan/custom-header
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
