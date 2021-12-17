@@ -10,14 +10,19 @@ class CustomHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: height ?? 90,
-      child: Padding(
-        padding: EdgeInsets.all(10),
-        child: Row(
-          children: [
-            title != null ? Text(title!) : const SizedBox(),
-          ],
+    return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(height ?? 90),
+        child: Container(
+          height: height ?? 90,
+          child: Padding(
+            padding: EdgeInsets.all(10),
+            child: Row(
+              children: [
+                title != null ? Text(title!) : const SizedBox(),
+              ],
+            ),
+          ),
         ),
       ),
     );
